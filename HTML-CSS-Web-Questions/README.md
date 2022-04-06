@@ -1,5 +1,5 @@
-## # First Part .
-## # Open ended Interview Questions ?
+## # First Part . 👋
+## # Open ended Interview Questions ? 🚀
 
 ### 1. What are some new things happening in the web ?
 
@@ -54,8 +54,8 @@
 
 
 
-## # Second Part .
-## # HTML CSS, Web Question Bank ?
+## # Second Part . 👋
+## # HTML CSS, Web Question Bank ? 🚀
 
 ### 1. Explain briefly what happens when you hit a url? explain DNS lookup ?
 
