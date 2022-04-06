@@ -26,19 +26,65 @@
 ### 5. Why do coding standards matter? What are some patterns you follow ?
 
 ```bash
- Answer will be updated soon . ...
+Q 5.1 => Why do coding standards matter ?
+
+Answer =>
+
+    what =>
+    * Coding standards are collections of rules and guidelines that determine the programming style.
+
+    why =>
+    * A coding standard gives a uniform appearance to the codes written by different engineers.
+
+    * Advantages => 
+       1. It improves readability. 
+       2. and maintainability of the code .
+       3. and it reduces complexity also .
+       4. It helps in code reuse .
+       5. and helps to detect error easily .
+
+Q 5.2 => What are some patterns you follow ?
+
+Answer =>
+
+    1. Appropriate Naming and Destructuring Props 
+        *To keep readable and clean code, use meaningful and short names for props of the component. 
+        * Also, use props destructuring feature of function which discards the need to write props with each property name and can be used as it is.
+    
+    2. Naming Conventions 
+        * A component name should always be in a Pascal case like ‘SelectButton’, ’Dashboard’ etc. Using Pascal case for components differentiate it from default JSX element tags.
+
+        * Methods/functions defined inside components should be in Camel case like ‘getApplicationData()’, ‘showText()’ etc.
+
+        * For globally used Constant fields in the application, try to use capital letters only. Like const PI = “3.14”;
+    
+    3. format my code before committing.
+    4. don't use inline-styles.
 ```
 
 ### 6. How do you go about managing responsive websites ?
 
 ```bash
- Answer will be updated soon . ...
+ 1. Set Appropriate Responsive Breakpoints
+    -In responsive design, a breakpoint is the “point” at which a website’s content and design will adapt in a certain way in order to provide the best possible user experience.
+
+ 2. use media query
+
+ 3. Define Typography
+    -Generally, web developers define font sizes with pixels. These work on static websites, but responsive websites need a responsive font. Font size must change with respect to parent container width. This is necessary to make typography adjust to screen size and be easily readable on multiple devices.
+
+    In the CSS3 specification, look for the unit named rems. It is similar to the em unit but acts relative to the HTML element. Because of this, the code must reset the HTML font-size .
+
+    @ {font-size:1rem;}
+ 4. confidence .
 ```
 
 ### 7. What do you care about the most when you write software ?
 
 ```bash
- Answer will be updated soon . ...
+ 1. Follow coding standards .
+ 2. Debug and Test .
+ 3. If i face same kind of feature or work before the this time i try to implement with diffrent and better approach .
 ```
 
 
