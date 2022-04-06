@@ -84,7 +84,7 @@ Answer =>
 ```bash
  1. Follow coding standards .
  2. Debug and Test .
- 
+ 3. If i face same kind of feature or work before the this time i try to implement with diffrent and better approach .
 ```
 
 
