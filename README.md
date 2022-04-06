@@ -1,2 +1,2 @@
-# Masai-Interview-Assign
+# Masai Interview Time Assignments.
 Masai Interview Time Assignments.
