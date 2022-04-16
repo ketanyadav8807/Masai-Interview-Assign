@@ -282,7 +282,7 @@ sleep(500).then(res=> {
 ```bash
     Answer ...
 ```
-### 13. Write a program to flatten an array ?
+### 21. Write a program to flatten an array ?
 // input: [ 1, [ 2, 3 ], [ 3 ], [ [ [ 5]],  6]  ]
 // output => [ 1, 2, 3, 3, 5, 6 ] 
 
