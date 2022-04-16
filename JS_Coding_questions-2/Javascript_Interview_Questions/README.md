@@ -188,3 +188,104 @@ user.gfg2();
     "output:- RefrenceError arguments is not defined"  
 
 ```
+
+### 5. Does Call apply bind work for arrow functions ?
+
+```bash
+    Answer ...
+```
+### 6. What does call apply bind do ?
+
+```bash
+    Answer ...
+```
+### 7. What are closures ?
+
+```bash
+    Answer ...
+```
+### 8. Write a program to debounce a search bar ?
+
+```bash
+    Answer ...
+```
+### 9. Write a program to throttle a search bar ?
+
+```bash
+    Answer ...
+```
+### 10. create a custom method for an array called myMap, use prototype chain to achieve this ?
+const arr = [1,2,3]
+arr.myMap(a=>a*5)
+// [ 5, 10, 15 ]
+it should work in this manner
+
+```bash
+    Answer ...
+```
+### 11. What is event bubbling ?
+
+```bash
+    Answer ...
+```
+### 12. What is event loop ?
+
+```bash
+    Answer ...
+```
+### 13. Explain promises to a 5 year old, with simple examples ?
+
+```bash
+    Answer ...
+```
+
+### 14. Write a function called sleep that will return a promise, if you do not provide a number to the function, then it will return an error and goto the catch block ?
+
+sleep(500).then(res=> {
+ console.log('slept for ${res} milli seconds})
+})
+.then(errr=>{
+  console.log(err)
+})
+
+```bash
+    Answer ...
+```
+### 15. what does async await mean ?
+
+```bash
+    Answer ...
+```
+### 16. What does the this keyword mean ?
+
+```bash
+    Answer ...
+```
+### 17. What are classes? what are getters and setters ?
+
+```bash
+    Answer ...
+```
+
+### 18. How do you declare private and static variables in classes ?
+
+```bash
+    Answer ...
+```
+### 19. Create a Calculator class, it should be able to add, reduce multiply and divide. it should have a value getter, and that should return final output. keep the history of changes made as well, and keep that private, and a user should be able to see previous changes made to the value ?
+
+```bash
+    Answer ...
+```
+### 20. What is currying ?
+
+```bash
+    Answer ...
+```
+### 13. Write a program to flatten an array ?
+// input: [ 1, [ 2, 3 ], [ 3 ], [ [ [ 5]],  6]  ]
+// output => [ 1, 2, 3, 3, 5, 6 ] 
+
+```bash
+    Answer ...
+```
