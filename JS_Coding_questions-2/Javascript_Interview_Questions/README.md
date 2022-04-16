@@ -115,11 +115,76 @@
 ### 3. How are var, let const different ?
 
 ```bash
- Answer will be updated soon . ...
+ * "Var" =>
+
+    1. The scope of a var variable is functional scope.
+    2. It can be updated and re-declared into the scope.
+    3. It can be declared without initialization.
+    4. It can be accessed without initialization as its default value is “undefined”.
+
+ * "Let" =>
+
+    1. The scope of a let variable is block scope.
+    2. It can be updated but cannot be re-declared into the scope.
+    3. It can be declared without initialization.
+    4. It cannot be accessed without initialization, as it returns an error. It's in Temporal dead Zone .
+
+ * "Const" =>
+   
+    1. The scope of a const variable is block scope.
+    2. It cannot be updated or re-declared into the scope.
+    3. It cannot be declared without initialization.
+    4. It cannot be accessed without initialization, as it cannot be declared without initialization.
 ```
 
 ### 4. What are the two main differences in arrow functions ?
 
 ```bash
- Answer will be updated soon . ...
+ 1. "Use of this keyword"
+ 2. "Availability of arguments objects"
+
+ 1. "Use of this keyword"
+    => Unlike regular functions, arrow functions do not have their own this.
+       For example:-
+
+let user = {
+    name: "GFG",
+
+    gfg1:() => {
+        console.log("hello " + this.name); // no 'this' binding here
+                                   "output // hello undefined"
+    },
+
+    gfg2(){	
+        console.log("Welcome to " + this.name); // 'this' binding works here
+                                   " output // Welcome to GFG"
+    }
+};
+user.gfg1();
+user.gfg2();
+
+
+2. "Availability of arguments objects"
+    => Arguments objects are not available in arrow functions, but are available in regular functions.
+
+    * Example using regular ():-
+
+        let user = {	
+            show(){
+                console.log(arguments);
+            }
+        };
+        user.show(1, 2, 3);
+        "output Works not through any error"
+
+    * Example using arrow ():-
+
+    let user = {	
+		show_ar : () => {
+		    console.log(...arguments);
+	    }
+    };
+    user.show_ar(1, 2, 3);
+    "output:- RefrenceError arguments is not defined"  
+
 ```
