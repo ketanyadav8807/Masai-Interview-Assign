@@ -6,11 +6,22 @@
 ```
 ### 2. How is node js non blocking ?
 ```bash
- ...Answer
+=> Blocking === Synchronous .
+ - line by line execution .
+ - Blocking: It refers to the blocking of further operation until the current operation finishes.
+ - Blocking methods are executed synchronously. Synchronously means that the program is executed line by line. The program waits until the called function or the operation returns.
+ - uses the readFileSync() function to read files and demonstrate Blocking in Node.js
+=> Non Blocking === Synchronous .
+ - line by line execution not guaranteed .
+ - Non-Blocking: It refers to the program that does not block the execution of further operations. Non-Blocking methods are executed asynchronously. Asynchronously means that the program may not necessarily execute line by line. The program calls the function and move to the next operation and does not wait for it to return.
+ - uses the readFile() function to read files and demonstrate Non-Blocking in Node.js
 ```
 ### 3. What is throughput ?
 ```bash
- ...Answer
+=> The amount of Data Transfered from client to server in a given time period is called Data Throughput .
+ - In communication networks, network throughput (or just throughput, when in context) is the rate of successful message delivery over a communication channel, such as Ethernet or packet radio. The data these messages belong to may be delivered over a physical or logical link, or it can pass through a certain network node. Throughput is usually measured in bits per second (bit/s or bps), and sometimes in data packets per second (p/s or pps) or data packets per time slot.
+ - The system throughput or aggregate throughput is the sum of the data rates that are delivered to all terminals in a network.[1] Throughput is essentially synonymous to digital bandwidth consumption; it can be analyzed mathematically by applying the queueing theory, where the load in packets per time unit is denoted as the arrival rate (λ), and the throughput, where the drop in packets per time unit, is denoted as the departure rate (μ).
+ - The throughput of a communication system may be affected by various factors, including the limitations of underlying analog physical medium, available processing power of the system components, and end-user behavior. When various protocol overheads are taken into account, useful rate of the transferred data can be significantly lower than the maximum achievable throughput; the useful part is usually referred to as goodput.
 ```
 ### 4. How is Node js having high IO throughput ?
 ```bash
