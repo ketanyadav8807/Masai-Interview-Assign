@@ -2,7 +2,8 @@
 
 ### 1. Explain in brief what is node js ?
 ```bash
- ...Answer
+NodeJS is a Javascript runtime environment.
+ Node js is the open source development platform for the execution of the javascript code.
 ```
 ### 2. How is node js non blocking ?
 ```bash
