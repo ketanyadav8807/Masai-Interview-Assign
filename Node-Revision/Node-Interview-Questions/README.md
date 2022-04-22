@@ -37,15 +37,38 @@
 ```
 ### 7. What is the event loop ?
 ```bash
- ...Answer
+=> The event loop is the secret by which JavaScript gives us an illusion of being multithreaded even though it is single-threaded .
+=> allback function in the event queue has not yet run and is waiting for its time into the stack when the SetTimeOut() is being executed and the Web API is making the mentioned wait. When the function stack becomes empty, the function gets loaded onto the stack .
+=> That is where the event loop comes into picture, it takes the first event from the Event Queue and places it onto the stack .
 ```
 ### 8. What are different phases in event loop ?
 ```bash
- ...Answer
+ => The Event Loop contains six main phases: timers, I/O callbacks, preparation / idle phase, I/O polling, setImmediate() callbacks execution, and close events callbacks.
+ => After a phase is complete, the application moves to the next tick and all phases are repeated again starting with timers until there is nothing left to process
 ```
 ### 9. What is process.tick ?
 ```bash
- ...Answer
+=> Every time the event loop takes a full trip, we call it a tick.
+=> Calling setTimeout(() => {}, 0) will execute the function at the end of next tick, much later than when using nextTick() which prioritizes the call and executes it just before the beginning of the next tick. REF:- https://nodejs.dev/learn/understanding-process-nexttick
+
+Source :- GFG:- https://www.geeksforgeeks.org/nodejs-process-nexttick-method/
+=>  In the code of snippet, the second console is printed first because this is a part of the current iteration of the event loop, and the first console is a part of a callback function that is associated with the process.nextTick() executed in the next iteration of the event loop.
+Below examples illustrate the use of the process.nextTick() property in NodeJS:
+
+Example:
+
+// Node.js program to demonstrate the
+// process.nextTick() Property
+	
+// Include process module
+const process = require('process');
+
+process.nextTick(() => {
+console.log('Executed in the next iteration');
+});
+
+console.log('Executed in the current iteration');
+
 ```
 ### 10. When can process.tick starve your event loop ?
 ```bash
@@ -53,7 +76,7 @@
 ```
 ### 11. What is the difference between setTimeout and setInterval ?
 ```bash
- ...Answer
+ setTimeout will be triggered once after interval of time . But the setInterval keeps trigering expression regularly after a given interval of time.
 ```
 ### 12. How can you make a network request with http module from the backend ?
 ```bash
@@ -113,13 +136,14 @@
 ```
 ### 26. What is the difference between Authorisation and Authentication ?
 ```bash
- ...Answer
+ * authentication is the process of verifying who someone is, whereas
+ *  authorization is the process of verifying what specific applications, files, and data a user has access to
 ```
 ### 27. What is difference between JS on the browser and node ?
 ```bash
- ...Answer
+=> Node js has full access to the system whereas for the browser is get access to the given files.
 ```
 ### 28. What is V8 ?
 ```bash
- ...Answer
+ V8 is a free and open-source JavaScript engine developed by the Chromium Project for Google Chrome and Chromium web browsers. The project’s creator is Lars Bak. The first version of the V8 engine was released at the same time as the first version of Chrome: 2 September 2008.
 ```
